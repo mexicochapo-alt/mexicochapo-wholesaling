@@ -1,0 +1,7 @@
+{
+  "name": "kevson Wholesaling",
+  "description": "The most advanced AI-powered real estate wholesaling platform. Features a persistent expert AI partner, nationwide deal feed, and creative finance toolkit.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
