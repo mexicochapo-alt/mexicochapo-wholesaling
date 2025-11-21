@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   LayoutDashboard, 
@@ -24,7 +25,12 @@ import {
   ArrowRight,
   PlayCircle,
   Lock,
-  Sparkles
+  Sparkles,
+  ChevronDown,
+  ChevronUp,
+  Bed,
+  Bath,
+  Maximize
 } from 'lucide-react';
 
 export const ICONS = {
@@ -52,7 +58,12 @@ export const ICONS = {
   ArrowRight: <ArrowRight size={20} />,
   Play: <PlayCircle size={24} />,
   Lock: <Lock size={14} />,
-  Sparkles: <Sparkles size={16} />
+  Sparkles: <Sparkles size={16} />,
+  ChevronDown: <ChevronDown size={16} />,
+  ChevronUp: <ChevronUp size={16} />,
+  Bed: <Bed size={16} />,
+  Bath: <Bath size={16} />,
+  Sqft: <Maximize size={16} />
 };
 
 export const MOCK_DEALS = [
@@ -72,7 +83,11 @@ export const MOCK_DEALS = [
     imageUrl: 'https://picsum.photos/800/600?random=1',
     postedBy: 'Marcus Invests',
     postedAt: '2h ago',
-    likes: 24
+    likes: 24,
+    description: 'Solid cosmetic flip opportunity in emerging neighborhood. Roof is 5 years old, HVAC is functional but older. Needs new kitchen, flooring, and paint throughout. Comps in the area are moving fast.',
+    beds: 3,
+    baths: 2,
+    sqft: 1450
   },
   {
     id: '2',
@@ -90,7 +105,11 @@ export const MOCK_DEALS = [
     imageUrl: 'https://picsum.photos/800/600?random=2',
     postedBy: 'Sarah Wholesales',
     postedAt: '5h ago',
-    likes: 156
+    likes: 156,
+    description: 'Incredible SubTo deal! Existing mortgage at 2.8% interest rate. PITI is $1,250/mo. Both units occupied with tenants paying $1,100 each ($2,200 total). Instant cashflow day one. Minimal cosmetic updates needed.',
+    beds: 4,
+    baths: 3,
+    sqft: 2200
   },
   {
     id: '3',
@@ -108,6 +127,10 @@ export const MOCK_DEALS = [
     imageUrl: 'https://picsum.photos/800/600?random=3',
     postedBy: 'Elite Homes',
     postedAt: '1d ago',
-    likes: 42
+    likes: 42,
+    description: 'Perfect Novation candidate. Seller wants retail price but house needs work. We have agreed to net the seller $280k. You fund the rehab ($30k) and we split the upside. ARV is conservative at $410k.',
+    beds: 3,
+    baths: 2.5,
+    sqft: 1800
   }
 ] as const;

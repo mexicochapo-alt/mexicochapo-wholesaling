@@ -1,3 +1,4 @@
+
 export interface Deal {
   id: string;
   address: string;
@@ -15,6 +16,10 @@ export interface Deal {
   postedBy: string;
   postedAt: string;
   likes: number;
+  description: string;
+  beds: number;
+  baths: number;
+  sqft: number;
 }
 
 export interface ChatMessage {
